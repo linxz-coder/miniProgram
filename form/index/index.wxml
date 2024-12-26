@@ -1,0 +1,46 @@
+<form catchsubmit="formSubmit" catchreset="formReset">
+  <view class="page-section" >
+    <view class="page-section-title">创作信息</view>
+    <!-- 标题 -->
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+          <input class="weui-input" name="input" placeholder="标题" />
+      </view>
+    </view>
+
+    <!-- 日期 -->
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+          <input class="weui-input" name="input" placeholder="日期" />
+      </view>
+    </view>
+
+    <!-- 作者 -->
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_input">
+          <input class="weui-input" name="input" placeholder="作者" />
+      </view>
+    </view>
+    
+  </view>
+
+  <!-- 分割线 -->
+  <view class="line"></view>
+
+  <view class="page-section">
+    <view class="page-section-title">文章内容</view>
+    <view class="weui-cells weui-cells_form">
+      <view class="weui-cell weui-active">
+        <view class="weui-cell__bd">
+          <textarea class="weui-textarea" value="" />
+        </view>
+      </view>
+    </view>     
+      
+  </view>
+
+  <view class="btn-area">
+    <button style="margin: 30rpx 0" type="primary" formType="submit">上传</button>
+    <button style="margin: 30rpx 0" formType="reset">取消</button>
+  </view>
+</form>

@@ -1,0 +1,3 @@
+<view>
+  <button bind:tap="btnHandler" mark:id="1" mark:name="Tom">按钮</button>
+</view>

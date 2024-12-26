@@ -1,0 +1,8 @@
+<view bind:tap="parentHandler" data-parentid="999" data-parentname="Anne">
+<!-- 事件传参：通过data-的方式传递数据 -->
+<!-- 如果名字带有-，会转换成小驼峰写法 -->
+<!-- 如果是小驼峰写法，会转换成全部小写 -->
+  <!-- <button bind:tap="btnHandler" data-id="1" data-name="Tom">按钮</button> -->
+
+  <button data-id="1" data-name="Tom">按钮</button>
+</view>

@@ -1,0 +1,149 @@
+<!-- view当成div使用即可 -->
+ 
+ <!-- 轮播图区域 -->
+<view class="swiper">
+<swiper 
+  autoplay 
+  indicator-dots
+  circular 
+  interval="2000" 
+  indicator-color="#fff"
+  indicator-active-color="#f3514f"
+>
+  <swiper-item>
+    <image src="../../assets/banner/banner-1.png" mode=""/>
+  </swiper-item>
+
+  <swiper-item>
+    <image src="../../assets/banner/banner-2.png" mode=""/>
+  </swiper-item>
+
+  <swiper-item>
+    <image src="../../assets/banner/banner-3.png" mode=""/>
+  </swiper-item>
+</swiper>
+
+</view>
+
+
+<!-- 公司信息 -->
+<view class="info">
+<text> <text class="iconfont icon-yunshupeisong"></text> 同城送达</text>
+<text> <text class="iconfont icon-icon"></text> 行业龙头</text>
+<text> <text class="iconfont icon-shijian"></text> 半小时送达</text>
+<text> <text class="iconfont icon-haoping"></text> 100% 好评</text>
+</view>
+
+<!-- 商品导航 -->
+<view class="good-nav">
+  <view>
+    <navigator url="/pages/list/list">
+    <image src="../../assets/category/cate-1.png" mode=""/>
+    <text>鲜花玫瑰</text>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/list/list">
+    <image src="../../assets/category/cate-2.png" mode=""/>
+    <text>鲜花玫瑰</text>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/list/list">
+    <image src="../../assets/category/cate-3.png" mode=""/>
+    <text>鲜花玫瑰</text>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/list/list">
+    <image src="../../assets/category/cate-4.png" mode=""/>
+    <text>鲜花玫瑰</text>
+    </navigator>
+  </view>
+  <view>
+    <navigator url="/pages/list/list">
+    <image src="../../assets/category/cate-5.png" mode=""/>
+    <text>鲜花玫瑰</text>
+    </navigator>
+  </view>
+</view>
+
+<!-- 推荐商品 -->
+<view class="good-hot">
+  <scroll-view class="scroll-x" scroll-x>
+    <view>
+      <view class="good-item">
+        <image src="../../assets/floor/1.png" mode=""/>
+        <text>鲜花玫瑰</text>
+        <text>66</text>
+      </view>
+    </view>
+
+    <view>
+      <view class="good-item">
+        <image src="../../assets/floor/2.png" mode=""/>
+        <text>鲜花玫瑰</text>
+        <text>286</text>
+      </view>
+    </view>
+
+    <view>
+      <view class="good-item">
+        <image src="../../assets/floor/3.png" mode=""/>
+        <text>鲜花玫瑰</text>
+        <text>88</text>
+      </view>
+    </view>
+
+    <view>
+      <view class="good-item">
+        <image src="../../assets/floor/4.png" mode=""/>
+        <text>鲜花玫瑰</text>
+        <text>99</text>
+      </view>
+    </view>
+
+    <view>
+      <view class="good-item">
+        <image src="../../assets/floor/5.png" mode=""/>
+        <text>鲜花玫瑰</text>
+        <text>100</text>
+      </view>
+    </view>
+  </scroll-view>
+
+  <!-- <scroll-view class="scroll-y" scroll-y>
+    <view>1</view>
+    <view>2</view>
+    <view>3</view>
+  </scroll-view> -->
+</view>
+
+<!-- 以下是知识点讲解 -->
+<!-- <view class="bg-image"></view> -->
+
+<!-- <image src="../../assets/floor/1.png" mode="aspectFit" show-menu-by-longpress lazy-load /> -->
+
+<!-- user-select: 长按以后选中文本 -->
+<!-- space: 显示多个空格，ensp半角字符，emsp全角字符 nbsp普通非断行空格-->
+<!-- <text user-select space="ensp">凡     学子</text> -->
+
+<!-- 路径跳转时，需要在路径前面添加 /斜线，否则跳转不成功 -->
+<!-- <navigator url="/pages/list/list?id=10&num=hua">到商品列表页面</navigator>
+<navigator url="/pages/cate/cate" open-type="switchTab">到商品分类页面</navigator> -->
+
+<!-- navigate: 只能跳转到非tabBar页面，保留上一级页面，可后退 -->
+<!-- <navigator url="/pages/list/list" open-type="navigate">到商品列表页面</navigator>
+<navigator url="/pages/cate/cate" open-type="navigate">到商品分类页面</navigator> -->
+
+<!-- redirect: 只能跳转到非tabBar页面，关闭上一级页面，只能回主页 -->
+<!-- <navigator url="/pages/list/list" open-type="redirect">到商品列表页面</navigator>
+<navigator url="/pages/cate/cate" open-type="redirect">到商品分类页面</navigator> -->
+
+<!-- switchTab: 只能跳转到tabBar页面，关闭所有非tabBar页面 -->
+<!-- <navigator url="/pages/list/list" open-type="switchTab">到商品列表页面</navigator>
+<navigator url="/pages/cate/cate" open-type="switchTab">到商品分类页面</navigator> -->
+
+<!-- reLaunch: 关闭所有页面，打开小程序中任一个页面 -->
+<!-- <navigator url="/pages/list/list" open-type="reLaunch">到商品列表页面</navigator>
+<navigator url="/pages/cate/cate" open-type="reLaunch">到商品分类页面</navigator> -->

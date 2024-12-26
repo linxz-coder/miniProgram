@@ -1,0 +1,16 @@
+<!-- 第一种绑定事件的方式 bind:事件名 -->
+<button type="primary" bind:tap="handler">绑定事件</button>
+
+<!-- 第二种绑定事件的方式 bind事件名 -->
+<button type="warn" bindtap="handlerWarn">绑定事件</button>
+
+<!-- 默认没边框，需要自己添加样式 -->
+<input type="text" bindinput="getInputValue"/>
+
+<view class="line"></view>
+
+<view class="catch" bind:tap="parentHandler"> 
+  <button bind:tap="btnHandler">按钮</button>
+  <!-- catch: 阻止事件冒泡 -->
+  <button catch:tap="btnHandler">catch按钮</button> 
+</view>
