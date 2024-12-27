@@ -1,0 +1,2 @@
+<view>hi</view>
+<button type="warn" bindtap="getData">获取数据</button>

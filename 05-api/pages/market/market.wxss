@@ -1,0 +1,19 @@
+/* pages/market/market.wxss */
+/* page {
+  height: 1000px;
+} */
+
+view {
+  height: 500rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+view:nth-child(odd) {
+  background-color: lightskyblue; /* 奇数是蓝色 */
+}
+
+view:nth-child(even) {
+  background-color: lightsalmon; /* 偶数是橙色 */
+}
